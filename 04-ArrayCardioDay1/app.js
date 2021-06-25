@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Array Cardio 💪</title>
-  </head>
-  <body>
-    <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
-    <script>
-      // Get your shorts on - this is an array workout!
       // ## Array Cardio Day 1
-
       // Some data we can work with
-
       const inventors = [
         { first: "Albert", last: "Einstein", year: 1879, passed: 1955 },
         { first: "Isaac", last: "Newton", year: 1643, passed: 1727 },
@@ -87,16 +75,13 @@
 
       // Array.prototype.sort()
       // 3. Sort the inventors by birthdate, oldest to youngest
-
       const sortedByBirthDateDESC = inventors.sort((a, b) => b.year - a.year);
       // console.table(sortedByBirthDateDESC);
-
       const ordered = inventors.sort((a, b) => (a.year > b.year ? 1 : -1));
       // console.table(ordered);
 
       // Array.prototype.reduce()
       // 4. How many years did all the inventors live all together?
-
       const sumYears = inventors.reduce((total, inventor) => {
         return total + (inventor.passed - inventor.year);
       }, 0);
@@ -155,17 +140,4 @@
         obj[item]++;
         return obj0;
       }, {});
-      console.log(instances);
-
-      // let count = {};
-      // data.forEach((item) => {
-      //   if (count[item]) {
-      //     count[item]++;
-      //   } else {
-      //     count[item] = 1;
-      //   }
-      // });
-      // console.log(count);
-    </script>
-  </body>
-</html>
+    //   console.log(instances);
